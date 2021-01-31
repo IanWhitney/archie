@@ -9,6 +9,10 @@
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
+  <link href="https://micro.blog/ianwhitney" rel="ianwhitney" />
+  <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+  <link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+
 	{{- if isset .Site.Params "favicon" -}}
 	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
 	{{- end -}}
