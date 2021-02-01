@@ -12,6 +12,8 @@
 					{{- end -}}
 				</div>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+        <script type="text/javascript" src="https://micro.blog/sidebar.js?username=ianwhitney"></script>
+
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<section class="list-item">
